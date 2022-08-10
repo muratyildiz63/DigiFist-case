@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'ITC Avant Garde Pro Bk';
+    src: local('ITC Avant Garde Gothic Pro Book'), local('ITCAvantGardePro-Bk'), url('ITCAvantGardePro/ITCAvantGardePro-Bk.woff2') format('woff2'), url('ITCAvantGardePro/ITCAvantGardePro-Bk.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Pro Md';
+    src: local('ITC Avant Garde Gothic Pro Bold'), local('ITCAvantGardePro-Bold'), url('ITCAvantGardePro/ITCAvantGardePro-Bold.woff2') format('woff2'), url('ITCAvantGardePro/ITCAvantGardePro-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Pro Md';
+    src: local('ITC Avant Garde Gothic Pro Medium'), local('ITCAvantGardePro-Md'), url('ITCAvantGardePro/ITCAvantGardePro-Md.woff2') format('woff2'), url('ITCAvantGardePro/ITCAvantGardePro-Md.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ITC Avant Garde Pro Bk';
+    src: local('ITC Avant Garde Gothic Std Demi'), local('ITCAvantGardePro-Demi'), url('ITCAvantGardePro/ITCAvantGardePro-Demi.woff2') format('woff2'), url('ITCAvantGardePro/ITCAvantGardePro-Demi.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'ITC Avant Garde Pro Bk';
+}
+
+::-webkit-scrollbar {
+    background: #E6E6E6;
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #575656;
+    border-radius: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+#productDetail .img-box img {
+    max-width: 100%;
+}
+
+#productDetail .productName {
+    font-weight: 700;
+    font-size: clamp(20px, 2vw, 31.25px);
+    line-height: 1.2;
+    padding-top: clamp(20px, 5vw, 90px);
+}
+
+.productDescription {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+    color: #666666;
+}
+
+.ShopEveryday {
+    font-weight: 900;
+    font-size: 12.8px;
+    line-height: 17px;
+    text-transform: capitalize;
+    color: #000000;
+    padding: 5px 10px 5px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.ShopEveryday:before {
+    content: '';
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.product-slide-item {
+    overflow: hidden;
+    transition: all .5s;
+    padding-bottom: 20px;
+}
+
+.product-slide-item:hover .image-wrapper>.image-inner>img {
+    transform: scale(1.05);
+}
+
+.image-wrapper {
+    width: 100%;
+    display: block;
+    position: relative;
+    padding-bottom: 135%;
+}
+
+.detail-img .image-wrapper {
+    padding-bottom: 120%;
+}
+
+.image-wrapper>.image-inner {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-wrapper>.image-inner>img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    transition: all .5s;
+}
+
+.slideProductName {
+    font-weight: 400;
+    font-size: 12.8px;
+    line-height: 160%;
+    color: #000000;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.productPrice {
+    font-weight: 500;
+    font-size: 12.8px;
+    line-height: 160%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.subOne span {
+    margin: 0 2px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+.subOne span.selected:before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    top: -2px;
+    border: 1px solid #000;
+    bottom: -2px;
+    left: -2px;
+    right: -2px;
+}
+
+@media (min-width: 1441px) {
+    .inner {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 1441px) {
+    .inner {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #productDetail .productName {
+        color: #fff;
+    }
+    .mobile-desing {
+        position: relative;
+        transform: translateY(-50%);
+        z-index: 9;
+    }
+    .ShopEveryday {
+        color: white;
+    }
+    .ShopEveryday:before {
+        background: white;
+    }
+    .detail-img:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        inset: 0;
+        opacity: .5;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 78.65%);
+    }
+}
